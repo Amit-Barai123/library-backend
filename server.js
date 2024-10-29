@@ -7,7 +7,7 @@ const bookRoutes = require('./routes/bookRoutes');
 const allotmentRoutes = require('./routes/allotmentRoutes');
 
 const app = express();
-app.use(cors());
+app.use(cors({ origin: '*' }));
 app.use(express.json());
 
 const PORT = process.env.PORT || 5000;
